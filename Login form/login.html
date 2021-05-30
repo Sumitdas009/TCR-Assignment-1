@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>COVID-19 Registration form</title>
+        <link rel="stylesheet" href="./loginstyle.css">
+</head>
+
+<body  class="regform">
+        
+        <h3>COVID-19 Registration form</h3>
+
+
+        <table align="center" cellpadding="10">
+
+                <!----- First Name ---------------------------------------------------------->
+                <tr>
+                        <td>FIRST NAME</td>
+                        <td><input type="text" name="First_Name" maxlength="30" />
+                                (max 30 characters a-z and A-Z)
+                        </td>
+                </tr>
+
+                <!----- Last Name ---------------------------------------------------------->
+                <tr>
+                        <td>LAST NAME</td>
+                        <td><input type="text" name="Last_Name" maxlength="30" />
+                                (max 30 characters a-z and A-Z)
+                        </td>
+                </tr>
+
+                <!----- Date Of Birth -------------------------------------------------------->
+                <tr>
+                        <td>DATE OF BIRTH</td>
+
+                        <td>
+
+                                <input type="date" name="bday">
+                        </td>
+                </tr>
+
+
+
+                <!----- Mobile Number ---------------------------------------------------------->
+                <tr>
+                        <td>MOBILE NUMBER</td>
+                        <td>
+                                <input type="text" name="Mobile_Number" maxlength="10" />
+                                (10 digit number)
+                        </td>
+                </tr>
+
+<!----- Addhar Number ---------------------------------------------------------->
+                <tr>
+                        <td>ADDHAR NUMBER</td>
+                        <td>
+                                <input type="text" name="Mobile_Number" maxlength="12" />
+                                (12 digit number)
+                        </td>
+                </tr>
+
+                <!----------------------------------------TRAVEL HISTORY--------->
+                <tr>
+                        <td>TRAVEL HISTORY</td>
+                        <td>  <label for="option">Choose YES on NO</label></td>
+                        <td> <select id="a" name="cars">
+                                <option value="yes">YES</option>
+                                <option value="no">NO</option>
+                              </select>
+                        </td>
+
+                </tr>
+
+
+                <!----- Country ---------------------------------------------------------->
+                <tr>
+                        <td>COUNTRY</td>
+                        <td><input type="checkbox" name="Country" value="US" readonly="readonly" />US</td>
+                        <td><input type="checkbox" name="Country" value="China" readonly="readonly" />CHINA</td>
+                        <td><input type="checkbox" name="Country" value="Indonesia" readonly="readonly" />INDONESIA</td>
+                </tr>
+
+                <!----- SYMPTOMS ---------------------------------------------------------->
+                <tr>
+                        <td>SYMPTOMS</td>
+                        <td><input type="checkbox" name="a" value="US" readonly="readonly" />COLD</td>
+                        <td><input type="checkbox" name="b" value="China" readonly="readonly" />COUGH</td>
+                        <td><input type="checkbox" name="c" value="Indonesia" readonly="readonly" />FEVER</td>
+                        <td><input type="checkbox" name=d value="Indonesia" readonly="readonly" />DIFFICULTY IN BREATHING</td>
+                </tr>
+
+                <!----- Submit and Reset ------------------------------------------------->
+                <tr>
+                        <td  colspan="2" align="center">
+                                <input class="button1" type="submit" value="Submit">
+                                <input class="button2" type="reset" value="Reset">
+                        </td>
+                </tr>
+        </table>
+
+        </form>
+
+</body>
+
+</html>
